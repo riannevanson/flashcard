@@ -1,10 +1,10 @@
 
 
 
-var DutchWords = ["Boek", "Hoi", "Hoe gaat het?"];
-var portugueseWords = ["Livro", "Ola", "Oi como esta?"];
+var DutchWords = [{ question : "Boek", answer : "Livro"}, {question: "Hoi", answer: "Ola"}, {question : "Hoe gaat het?", answer : "Oi como esta?"}];
 
 var randomWords = DutchWords[Math.floor(Math.random() * DutchWords.length)]
+console.log(DutchWords[0].question);
 console.log(randomWords);
 
 function showRandomWord(){
@@ -12,7 +12,11 @@ function showRandomWord(){
 }
 console.log(showRandomWord())
 
+
 function submitEvent(){
   document.getElementById('randomword').innerHTML = randomWords;
+
+
+function showAnswer(){
 
 }
