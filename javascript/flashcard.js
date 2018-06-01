@@ -24,4 +24,26 @@ function submitEvent(){
   document.getElementById('randomword').removeAttribute = '';
   document.getElementById('randomword').innerHTML = randomAnswer;
   console.log(randomWords)
+
+
+var inputAnswer = document.getElementById('input').value;
+console.log(inputAnswer)
+
+// make randomAnswer ignore case
+var inputA = inputAnswer.toLowerCase()
+var answerB = randomAnswer.toLowerCase()
+
+  if (inputA === answerB){
+  alert('Yes!!!!')
+  } else {
+    alert('try again')
+  }
 }
+
+function nextEvent(){
+  location.reload();
+}
+
+
+var inputAnswer = document.getElementById('input').value;
+console.log(inputAnswer)
