@@ -17,3 +17,13 @@ body{
 .randomword{
   text-align: center;
 }
+.pointbox{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  color: white;
+  margin: auto;
+  margin-right: 100px;
+  padding: 10px;
+
+}
