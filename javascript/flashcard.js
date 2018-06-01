@@ -2,9 +2,9 @@
 
 
 var DutchWords = [{ question : "Boek", answer : "Livro"}, {question: "Hoi", answer: "Ola"}, {question : "Hoe gaat het?", answer : "Oi como esta?"}];
-var question = DutchWords[question];
-var sizestring = DutchWords.length
-var randomWords = DutchWords[Math.floor(Math.random() * question.length)]
+
+var randomWords = DutchWords[Math.floor(Math.random() * DutchWords.length)]
+console.log(DutchWords[0].question);
 console.log(randomWords);
 
 function showRandomWord(){
