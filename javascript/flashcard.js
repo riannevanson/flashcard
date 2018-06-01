@@ -10,6 +10,8 @@ var randomWords = DutchWords[indexNumber].question
 // var randomWords = DutchWords[Math.floor(Math.random() * DutchWords.length)].question
 var randomAnswer = DutchWords[indexNumber].answer
 
+var points = 0;
+
 console.log(DutchWords[0].question);
 console.log(randomWords);
 console.log(`this is randomanswer ${randomAnswer}`)
@@ -35,6 +37,10 @@ var answerB = randomAnswer.toLowerCase()
 
   if (inputA === answerB){
   alert('Yes!!!!')
+  // var points = document.getElementById('pointBox').innerHTML = points++
+
+  (document.getElementById('pointBox').innerHTML = `Points: ${points++}`)
+
   } else {
     alert('try again')
   }
@@ -42,8 +48,9 @@ var answerB = randomAnswer.toLowerCase()
 
 function nextEvent(){
   location.reload();
-}
 
+}
+  (document.getElementById('pointBox').innerHTML = `Points: ${points++}`)
 
 var inputAnswer = document.getElementById('input').value;
 console.log(inputAnswer)
