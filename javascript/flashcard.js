@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-
 
 
 var DutchWords = [{ question : "Boek", answer : "Livro"}, {question: "Hoi", answer: "Ola"}, {question : "Hoe gaat het?", answer : "Oi como esta?"}];
@@ -26,5 +23,26 @@ function submitEvent(){
   document.getElementById('randomword').removeAttribute = '';
   document.getElementById('randomword').innerHTML = randomAnswer;
   console.log(randomWords)
+
+
+var inputAnswer = document.getElementById('input').value;
+console.log(inputAnswer)
+
+// make randomAnswer ignore case
+var inputA = inputAnswer.toLowerCase()
+var answerB = randomAnswer.toLowerCase()
+
+  if (inputA === answerB){
+  alert('Yes!!!!')
+  } else {
+    alert('try again')
+  }
 }
->>>>>>> 0392ce73200161c71754292639fbe97f186d351e
+
+function nextEvent(){
+  location.reload();
+}
+
+
+var inputAnswer = document.getElementById('input').value;
+console.log(inputAnswer)
