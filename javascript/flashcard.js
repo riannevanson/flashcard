@@ -1,3 +1,6 @@
-console.log('hi')
 
-var randomWords ["Boek", "Hoi", "Hoe gaat het?"];
+
+var words = ["Boek", "Hoi", "Hoe gaat het?"];
+var randomWords = words[Math.floor(Math.random() * words.length)];
+
+console.log(randomWords);
