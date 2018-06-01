@@ -1,1 +1,1 @@
-var portuguesewords ["Livro", "Ola","Como voce esta?" ];
+var randomWords ["Boek", "Hoi", "Hoe gaat het?"];
