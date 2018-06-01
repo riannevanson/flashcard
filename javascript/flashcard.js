@@ -1,1 +1,1 @@
-console.log('hi')
+var portuguesewords ["Livro", "Ola","Como voce esta?" ];
