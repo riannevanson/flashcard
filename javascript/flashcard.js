@@ -12,6 +12,7 @@ function showRandomWord(){
 }
 console.log(showRandomWord())
 
-function showAnswer(){
+function submitEvent(){
+  document.getElementById('randomword').innerHTML = randomWords;
 
 }
