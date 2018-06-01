@@ -1,19 +1,16 @@
-<<<<<<< HEAD
-var Words = ["Boek", "Hoi", "Hoe gaat het?"];
-var randomWords = Math.random(Words);
-console.log(randomWords);
-=======
 
 
 
-var words = ["Boek", "Hoi", "Hoe gaat het?"];
-
-var randomWords = words[Math.floor(Math.random() * words.length)]
+var DutchWords = [{ question : "Boek", answer : "Livro"}, {question: "Hoi", answer: "Ola"}, {question : "Hoe gaat het?", answer : "Oi como esta?"}];
+var question = DutchWords[question];
+var sizestring = DutchWords.length
+var randomWords = DutchWords[Math.floor(Math.random() * question.length)]
 console.log(randomWords);
 
 function showRandomWord(){
     document.getElementById('randomword').innerHTML = randomWords;
 }
 console.log(showRandomWord())
-=======
->>>>>>> 863da7a9f4ba7ed306ae9062b583569de7bc2ae4
+
+function showAnswer(){
+}
